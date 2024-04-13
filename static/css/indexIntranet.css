@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #54bef8;
+    --back-color: #003785;
+    --text-color: #ffffff;
+}
+html{
+    height: 100%;
+}
+.header{
+    grid-area: header;
+    background-color: #54bef8;
+}
+.aside{
+    grid-area: aside;
+    background-color: #003785;
+    height: 100%;
+}
+.main{
+    grid-area: main;
+    background-color: darkgoldenrod;
+}
+body{
+    display: grid;
+    min-height: 100%;
+    grid-template:
+    "header header" 3em
+    "aside main" auto/
+    14% 86%;
+}
+/* ! *****HEADER*****/
+.header{
+    padding: 0 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo{
+    height: 100%;
+    width: 6em;
+    padding: .5em 0;
+}
+.header-information{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    color: var(--text-color);
+}
+.header-logout{
+    cursor: pointer;
+    color: #ffffff;
+}
+.header-logout i{
+    padding-right: 0.5em;
+}
+/* ! *****ASIDE*****/
+.aside{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2em;
+    padding-top: 2em;
+}
+.aside-welcome{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding-left: 1em;
+}
+.aside-menu > ul{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: .5em 0;
+}
+.aside-menu ul li{
+    line-height: 3em;
+    padding-left: 1.5em;
+    color: var(--text-color);
+}
+.aside-menu ul li a{
+    color: var(--text-color);
+}
+.aside-menu ul li:hover{
+    background-color: rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+.menu-main{
+    position: relative;
+}
+.aside-line{
+    width: 0.5em;
+    height: 3em;
+    background-color: var(--main-color);
+    position: absolute;
+    left: -1.5em;
+    display: none;
+}
+.aside-menu ul li:hover .aside-line{
+    display: block;
+}
+.li-right{
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.submenu{
+    height: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+.submenu.active{
+    height: 9em;
+}

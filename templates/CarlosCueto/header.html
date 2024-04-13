@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/index.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/programs.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="body">
+    <header class="header">
+      <nav class="nav-top">
+        <div class="nav-top__services">
+          <ul>
+            <li>Contratos</li>
+            <li>Publicaciones</li>
+            <li>Egresados</li>
+          </ul>
+        </div>
+        <div class="nav-top__institutional">
+          <ul>
+            <li><a href="{{ url_for('login_page') }}"><i class="fa-solid fa-user"></i>Intranet</li></a>
+            <li><a href=""><i class="fa-solid fa-briefcase"></i>Portal laboral</li></a>
+          </ul>
+        </div>
+      </nav>
+      <nav class="nav-bottom">
+        <a href="{{ url_for('main') }}" class="nav-bottom__logo">
+          <img src="{{ url_for('static',filename='img/svg/logo.svg')}}" alt="">
+        </a>
+        <div class="nav-bottom__opc">
+          <div class="nav-bottom__opc-programs nav-bottom__opc-general">
+            <a>PROGRAMAS<i class="fa-solid fa-chevron-down"></i></a>
+            <ul>
+              {% for program in data.programs %}
+              <li>
+                <a href="{{ program[1] }}">
+                  <i {{ program[2] | safe }}></i>
+                  <p>{{ program[0] }}</p>
+                  <div class="line"></div>
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="nav-bottom__opc-admission nav-bottom__opc-general">
+            <a>ADMISION<i class="fa-solid fa-chevron-down"></i></a>
+            <ul>
+              {% for admission in data.admission %}
+              <li>
+                <a href="{{ admission[1] }}">
+                  <i {{ admission[2] | safe }}></i>
+                  <p>{{ admission[0] }}</p>
+                  <div class="line"></div>
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="nav-bottom__opc-institutional nav-bottom__opc-general">
+            <a>INSTITUCIONAL<i class="fa-solid fa-chevron-down"></i></a>
+            <ul>
+              {% for institutional in data.institutional %}
+              <li>
+                <a href="{{ institutional[1] }}">
+                  <i {{ institutional[2] | safe }}></i>
+                  <p>{{ institutional[0] }}</p>
+                  <div class="line"></div>
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

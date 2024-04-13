@@ -1,0 +1,272 @@
+{% include 'CarlosCueto/header.html' %}
+<nav class="nav">
+  <div class="slides">
+    <img
+      class="slides-img active"
+      src="{{ url_for('static',filename='img/img-slider/img1.jpg')}}"
+      alt=""
+    />
+    <img
+      class="slides-img"
+      src="{{ url_for('static',filename='img/img-slider/img2.jpg')}}"
+      alt=""
+    />
+    <img
+      class="slides-img"
+      src="{{ url_for('static',filename='img/img-slider/img3.jpg')}}"
+      alt=""
+    />
+    <img
+      class="slides-img"
+      src="{{ url_for('static',filename='img/img-slider/img4.jpg')}}"
+      alt=""
+    />
+    <img
+      class="slides-img"
+      src="{{ url_for('static',filename='img/img-slider/img5.jpg')}}"
+      alt=""
+    />
+  </div>
+  <div class="points-slider">
+    <div class="point-slider active" point-img="0"></div>
+    <div class="point-slider" point-img="1"></div>
+    <div class="point-slider" point-img="2"></div>
+    <div class="point-slider" point-img="3"></div>
+    <div class="point-slider" point-img="4"></div>
+  </div>
+  <div class="arrows-slider">
+    <div class="arrow-slider" arrow-img="1">
+      <i class="fa-solid fa-circle-arrow-left"></i>
+    </div>
+    <div class="arrow-slider" arrow-img="2">
+      <i class="fa-solid fa-circle-arrow-right"></i>
+    </div>
+  </div>
+</nav>
+<main class="main">
+  <div class="main-programs__container">
+    <h1>CARLOS CUETO FERNANDINI</h1>
+    <h2>9 PROGRAMAS DE ESTUDIO:</h2>
+    <div class="line-h2"></div>
+    <div class="main-programs">
+      <div class="main-program">
+        <div class="main-program__overlay"></div>
+        <img
+          src="{{ url_for('static',filename='img/img-programs/administracion.jpg' )}}"
+          alt=""
+        />
+        <a class="main-program__text">ADMINISTRACIÓN DE EMPRESAS</a>
+        <a href="{{ url_for('administracion') }}" class="main-program__button"
+          >Descubrir</a
+        >
+      </div>
+      <div class="main-program">
+        <div class="main-program__overlay"></div>
+        <img
+          src="{{ url_for('static',filename='img/img-programs/computacion.jpg' )}}"
+          alt=""
+        />
+        <a class="main-program__text">COMPUTACIÓN E INFORMATICA</a>
+        <a href="{{ url_for('computacion') }}" class="main-program__button"
+          >Descubrir</a
+        >
+      </div>
+      <div class="main-program">
+        <div class="main-program__overlay"></div>
+        <img
+          src="{{ url_for('static',filename='img/img-programs/contabilidad.jpg' )}}"
+          alt=""
+        />
+        <a class="main-program__text">CONTABILIDAD</a>
+        <a href="{{ url_for('contabilidad') }}" class="main-program__button"
+          >Descubrir</a
+        >
+      </div>
+      <div class="main-program">
+        <div class="main-program__overlay"></div>
+        <img
+          src="{{ url_for('static',filename='img/img-programs/electronica.jpg' )}}"
+          alt=""
+        />
+        <a class="main-program__text">ELECTRÓNICA</a>
+        <a href="{{ url_for('electronica') }}" class="main-program__button"
+          >Descubrir</a
+        >
+      </div>
+      <div class="main-program">
+        <div class="main-program__overlay"></div>
+        <img
+          src="{{ url_for('static',filename='img/img-programs/electrotecnia.jpg' )}}"
+          alt=""
+        />
+        <a class="main-program__text">ELECTROTECNIA</a>
+        <a href="{{ url_for('electrotecnia') }}" class="main-program__button"
+          >Descubrir</a
+        >
+      </div>
+      <div class="main-program">
+        <div class="main-program__overlay"></div>
+        <img
+          src="{{ url_for('static',filename='img/img-programs/laboratorio.jpg' )}}"
+          alt=""
+        />
+        <a class="main-program__text">LABORATORIO</a>
+        <a href="{{ url_for('laboratorio') }}" class="main-program__button"
+          >Descubrir</a
+        >
+      </div>
+      <div class="main-program">
+        <div class="main-program__overlay"></div>
+        <img
+          src="{{ url_for('static',filename='img/img-programs/automotriz.jpg' )}}"
+          alt=""
+        />
+        <a class="main-program__text">MECÁNICA AUTOMOTRIZ</a>
+        <a
+          href="{{ url_for('mecanicaAutomotriz') }}"
+          class="main-program__button"
+          >Descubrir</a
+        >
+      </div>
+      <div class="main-program">
+        <div class="main-program__overlay"></div>
+        <img
+          src="{{ url_for('static',filename='img/img-programs/produccion.jpg' )}}"
+          alt=""
+        />
+        <a class="main-program__text">MECÁNICA DE PRODUCCIÓN</a>
+        <a
+          href="{{ url_for('mecanicaProduccion') }}"
+          class="main-program__button"
+          >Descubrir</a
+        >
+      </div>
+      <div class="main-program">
+        <div class="main-program__overlay"></div>
+        <img
+          src="{{ url_for('static',filename='img/img-programs/metalurgia.jpg' )}}"
+          alt=""
+        />
+        <a class="main-program__text">METALURGIA</a>
+        <a href="{{ url_for('metalurgia') }}" class="main-program__button"
+          >Descubrir</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="main-why__container-bg">
+    <div class="main-why__container">
+      <h2>POR QUÉ CUETO</h2>
+      <div class="line-h2"></div>
+      <div class="main-benefits">
+        <div class="main-benefit">
+          <div class="main-benefit__icon">
+            <i class="fa-solid fa-timeline"></i>
+          </div>
+          <div class="main-benefit__text">MAS DE 30 AÑOS DE EXPERIENCIA</div>
+        </div>
+        <div class="main-benefit">
+          <div class="main-benefit__icon">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <div class="main-benefit__text">2 HORARIOS DE ESTUDIO</div>
+        </div>
+        <div class="main-benefit">
+          <div class="main-benefit__icon">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+          <div class="main-benefit__text">TITULO A NOMBRE DE LA NACIÓN</div>
+        </div>
+        <div class="main-benefit">
+          <div class="main-benefit__icon">
+            <i class="fa-regular fa-address-card"></i>
+          </div>
+          <div class="main-benefit__text">CARNET DE MEDIO PASAJE</div>
+        </div>
+        <div class="main-benefit">
+          <div class="main-benefit__icon">
+            <i class="fa-regular fa-handshake"></i>
+          </div>
+          <div class="main-benefit__text">CONVENIOS UNIVERSITARIOS</div>
+        </div>
+        <div class="main-benefit">
+          <div class="main-benefit__icon">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="main-benefit__text">ACCESO A LA BOLSA DE TRABAJO</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="news-cueto">
+    <h2>NOTICIAS</h2>
+    <div class="line-h2"></div>
+    <div class="news-cueto__card-container">
+      <div class="news-cueto__card">
+        <div class="news-cueto__card__img">
+          <img
+            src="{{ url_for('static',filename='img/img-news/img1.jpg')}}"
+            alt=""
+          />
+        </div>
+        <div class="news-cueto__card__text">
+          <div class="news-cueto__card__date">ABR 08, 2023</div>
+          <div class="news-cueto__card__title">
+            ¿DE QUÉ TRATA LA CARRERA DE DISEÑO DE INTERIORES?
+          </div>
+        </div>
+      </div>
+      <div class="news-cueto__card">
+        <div class="news-cueto__card__img">
+          <img
+            src="{{ url_for('static',filename='img/img-news/img2.jpg')}}"
+            alt=""
+          />
+        </div>
+        <div class="news-cueto__card__text">
+          <div class="news-cueto__card__date">ABR 08, 2023</div>
+          <div class="news-cueto__card__title">
+            ¿POR QUÉ ESTUDIAR COMUNICACIÓN AUDIOVISUAL?
+          </div>
+        </div>
+      </div>
+      <div class="news-cueto__card">
+        <div class="news-cueto__card__img">
+          <img
+            src="{{ url_for('static',filename='img/img-news/img3.jpg')}}"
+            alt=""
+          />
+        </div>
+        <div class="news-cueto__card__text">
+          <div class="news-cueto__card__date">ABR 08, 2023</div>
+          <div class="news-cueto__card__title">
+            15 NOVEDOSAS IDEAS DE REGALOS PARA SAN VALENTÍN
+          </div>
+        </div>
+      </div>
+      <div class="news-cueto__card">
+        <div class="news-cueto__card__img">
+          <img
+            src="{{ url_for('static',filename='img/img-news/img4.jpg')}}"
+            alt=""
+          />
+        </div>
+        <div class="news-cueto__card__text">
+          <div class="news-cueto__card__date">ABR 08, 2023</div>
+          <div class="news-cueto__card__title">
+            CONOCE MÁS SOBRE LA NUEVA ALIANZA ENTRE WETALK
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="news-cueto__link">
+      <div class="news-cueto__link__button">
+        <div class="news-cueto__link__button__text">
+          <a href="">VER MÁS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="{{ url_for('static',filename='js/index.js') }}"></script>
+{% include 'CarlosCueto/footer.html' %}

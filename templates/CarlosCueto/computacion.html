@@ -1,0 +1,453 @@
+{% include 'CarlosCueto/header.html' %}
+<main class="computacion programs">
+  <section
+    class="cover-img__programs cover-img__computacion"
+    style="background-image: url(' {{url_for('static',filename='img/img-programs/computacion.jpg') }} ');"
+  >
+    <div class="cover-img__overlay"></div>
+    <div class="cover-img__text-container">
+      <div class="cover-img__title">COMPUTACIÓN E INFORMÁTICA</div>
+      <div class="cover-img__subtitle">
+        Serás un profesional técnico competente capaz de desarrollar sistemas de
+        información multiplataforma para lograr soluciones integrales que
+        contribuyan con el incremento de la productividad de las organizaciones.
+      </div>
+      <a href="#form" class="cover-img__button">CONOCE MÁS</a>
+    </div>
+  </section>
+  <section class="submenu__programs submenu__computacion">
+    <div class="submenu__programs-container">
+      <a href="#acerca" class="submenu__programs-about">
+        ACERCA DE LA CARRERA
+        <div class="line-programs"></div>
+      </a>
+      <a href="#campo-laboral" class="submenu__programs-labor">
+        CAMPO LABORAL
+        <div class="line-programs"></div>
+      </a>
+      <a href="#syllabus" class="submenu__programs-syllabus">
+        PLAN DE ESTUDIOS
+        <div class="line-programs"></div>
+      </a>
+    </div>
+  </section>
+  <section class="about__programs about__computacion" id="acerca">
+    <div class="about__what-is">
+      <div class="about__what-is__title">
+        <h3>¿QUÉ ES COMPUTACIÓN E INFORMÁTICA?</h3>
+        <div class="program-underline"></div>
+      </div>
+      <div class="about__what-is__text program-text">
+        La computación e informática es una disciplina que se encarga del
+        estudio y desarrollo de sistemas de información y tecnologías de la
+        información.
+        <br /><br />
+        La computación e informática incluye una amplia gama de áreas, que
+        incluyen programación de software, redes de computadoras, seguridad
+        informática, inteligencia artificial, análisis de datos, diseño de bases
+        de datos, entre otras.
+        <br /><br />
+        Esta disciplina es fundamental en la sociedad actual, ya que la mayoría
+        de las empresas y organizaciones dependen de la tecnología de la
+        información para llevar a cabo sus operaciones diarias.
+      </div>
+    </div>
+    <div class="about__slide">
+      <img
+        src="{{ url_for('static',filename='img/img-programs-slide/computacion1.png') }}"
+        alt=""
+        class="about__slide-img active"
+      />
+      <img
+        src="{{ url_for('static',filename='img/img-programs-slide/computacion2.png') }}"
+        alt=""
+        class="about__slide-img"
+      />
+      <img
+        src="{{ url_for('static',filename='img/img-programs-slide/computacion3.png') }}"
+        alt=""
+        class="about__slide-img"
+      />
+      <img
+        src="{{ url_for('static',filename='img/img-programs-slide/computacion4.png') }}"
+        alt=""
+        class="about__slide-img"
+      />
+    </div>
+    <div class="about__what-does">
+      <div class="about__what-does__title">
+        <h3>¿QUE FUNCIONES REALIZA UN TECNICO EN COMPUTACIÓN E INFORMÁTICA?</h3>
+        <div class="program-underline"></div>
+      </div>
+      <div class="about__what-does__text program-text">
+        Un técnico en computación e informática puede realizar una amplia
+        variedad de funciones en el ámbito de la tecnología de la información.
+        <br /><br />
+        Algunas de las funciones que puede desempeñar un técnico en esta área
+        incluyen: Instalación y configuración de hardware y software,
+        mantenimiento y reparación de equipos, soporte técnico, desarrollo de
+        software, administración de bases de datos, implementación de soluciones
+        de seguridad, entre otras funciones.
+      </div>
+    </div>
+  </section>
+  <section
+    class="labor-field__programs labor-field__computacion"
+    id="campo-laboral"
+  >
+    <div class="labor-field__title">
+      <h3>CAMPO LABORAL</h3>
+      <div class="program-underline"></div>
+    </div>
+    <div class="labor-field__text program-text">
+      El campo laboral de un técnico en computación e informática es muy amplio
+      y diverso, ya que la tecnología de la información es esencial en casi
+      todas las áreas de trabajo. Algunos de los lugares donde un técnico en
+      esta área puede trabajar son:
+    </div>
+    <ul class="labor-field__list">
+      <li><i class="fa-regular fa-circle-check"></i>Soporte técnico</li>
+      <li><i class="fa-regular fa-circle-check"></i>Administrador de redes</li>
+      <li>
+        <i class="fa-regular fa-circle-check"></i>Desarrollador de software
+      </li>
+      <li>
+        <i class="fa-regular fa-circle-check"></i>Administrador de sistemas
+      </li>
+      <li>
+        <i class="fa-regular fa-circle-check"></i>Especialista en seguridad
+        informática
+      </li>
+      <li><i class="fa-regular fa-circle-check"></i>Consultor de tecnología</li>
+      <li>
+        <i class="fa-regular fa-circle-check"></i>Especialista en análisis de
+        datos
+      </li>
+    </ul>
+  </section>
+  <section id="syllabus" class="syllabus__programs syllabus__computacion">
+    <div class="syllabus__programs-container">
+      <div class="syllabus__programs-details">
+        <div class="syllabus__programs__title">
+          <h3>¿QUE CURSOS ESTUDIARE EN ADMINISTRACIÓN DE EMPRESAS?</h3>
+          <div class="program-underline"></div>
+        </div>
+        <div class="syllabus__programs__text program-text">
+          Nuestra malla curricular en Computación e Informática destaca por
+          ofrecerte una formación holística en habilidades blandas y en
+          conocimiento técnico avanzado.
+          <br /><br />
+          Dentro de la carrera aprenderás habilidades y conceptos fundamentales
+          que son esenciales para trabajar en el campo de la tecnología de la
+          información, como la programación, la gestión de bases de datos, los
+          sistemas operativos y la seguridad informática.
+        </div>
+      </div>
+      <div class="syllabus__programs-img">
+        <img
+          src="{{ url_for('static',filename='img/img-programs/computacion-cursos.jpg')}}"
+          alt=""
+          class="syllabus__programs-imagen"
+        />
+      </div>
+      <div class="syllabus__programs-syllabus">
+        <div class="syllabus__programs-syllabus-container">
+          <div class="syllabus-container">
+            <div class="syllabus-item active">
+              <div class="syllabus-item-text">
+                <div class="syllabus-item-text-cycle active">CICLO</div>
+                <div class="syllabus-item-text-number active">01</div>
+              </div>
+              <div class="syllabus-line-complete">
+                <div class="syllabus-line-part active"></div>
+              </div>
+              <ul class="syllabus-curses">
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Organización y
+                  administración del soporte técnico
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Integración de las
+                  TICS
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Mantenimiento de
+                  equipos de cómputo
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Diseño de redes de
+                  comunicación
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Seguridad informática
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Técnicas de
+                  comunicación
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Lógica y funciones
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Cultura fisica y
+                  deporte
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Informática e
+                  internet
+                </li>
+              </ul>
+            </div>
+            <div class="syllabus-item">
+              <div class="syllabus-item-text">
+                <div class="syllabus-item-text-cycle">CICLO</div>
+                <div class="syllabus-item-text-number">02</div>
+              </div>
+              <div class="syllabus-line-complete">
+                <div class="syllabus-line-part"></div>
+              </div>
+              <ul class="syllabus-curses">
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Reparación de equipos
+                  de cómputo
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Instalación y
+                  configuración de redes de comunicación
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Herramientas de
+                  gestión de redes de comunicación
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Administración de
+                  redes
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Software de servidor
+                  de red
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Estadística General
+                </li>
+                <li><i class="fa-solid fa-chevron-right"></i>Ofimática</li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Fundamentos de
+                  investigación
+                </li>
+              </ul>
+            </div>
+            <div class="syllabus-item">
+              <div class="syllabus-item-text">
+                <div class="syllabus-item-text-cycle">CICLO</div>
+                <div class="syllabus-item-text-number">03</div>
+              </div>
+              <div class="syllabus-line-complete">
+                <div class="syllabus-line-part"></div>
+              </div>
+              <ul class="syllabus-curses">
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Análisis y diseño de
+                  sistemas
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Herramientas de
+                  desarrollo de software
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Taller de base de
+                  datos
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Lógica de
+                  programación
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Taller de
+                  modelamiento de software
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Sociedad y Economía
+                  en la Globalización
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Medio Ambiente y
+                  Desarrollo Sostenible
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Investigación e
+                  Innovación tecnológicas
+                </li>
+              </ul>
+            </div>
+            <div class="syllabus-item">
+              <div class="syllabus-item-text">
+                <div class="syllabus-item-text-cycle">CICLO</div>
+                <div class="syllabus-item-text-number">04</div>
+              </div>
+              <div class="syllabus-line-complete">
+                <div class="syllabus-line-part"></div>
+              </div>
+              <ul class="syllabus-curses">
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Investigación De
+                  Mercado
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Comercio
+                  Internacional
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Sistema De Ventas Y
+                  Comercio Electrónico
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Marketing De
+                  Servicios
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Comunicación
+                  Interpersonal
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Proyecto De
+                  Investigación E Innovación Tecnológica
+                </li>
+              </ul>
+            </div>
+            <div class="syllabus-item">
+              <div class="syllabus-item-text">
+                <div class="syllabus-item-text-cycle">CICLO</div>
+                <div class="syllabus-item-text-number">05</div>
+              </div>
+              <div class="syllabus-line-complete">
+                <div class="syllabus-line-part"></div>
+              </div>
+              <ul class="syllabus-curses">
+                <li><i class="fa-solid fa-chevron-right"></i>Diseño gráfico</li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Animación de gráficos
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Herramientas
+                  multimedia
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Gestión y
+                  administración web
+                </li>
+                <li><i class="fa-solid fa-chevron-right"></i>Diseño web</li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Comunicación
+                  Empresarial
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Ética Profesional
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Organización y
+                  Constitución de Empresas
+                </li>
+              </ul>
+            </div>
+            <div class="syllabus-item">
+              <div class="syllabus-item-text">
+                <div class="syllabus-item-text-cycle">CICLO</div>
+                <div class="syllabus-item-text-number">06</div>
+              </div>
+              <div class="syllabus-line-complete">
+                <div class="syllabus-line-part"></div>
+              </div>
+              <ul class="syllabus-curses">
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Taller de
+                  programación web
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Comercio electrónico
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Aplicaciones móviles
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Producción
+                  audiovisual
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Liderazgo y Trabajo
+                  en Equipo
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Proyecto Empresarial
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>Legislación e
+                  Inserción Laboral
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="button1" value="1">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+          </div>
+          <div class="button2" value="2">
+            <i class="fa-solid fa-circle-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="syllabus__programs-download">
+        <a
+          href="{{ url_for('static',filename='pdf/computacion.pdf') }}"
+          download
+          ><i class="fa-regular fa-file-pdf"></i>DESCARGAR PLAN DE ESTUDIOS</a
+        >
+      </div>
+    </div>
+  </section>
+  <section class="form__programs form__computacion" id="form">
+    <div class="form__programs-container">
+      <div class="form__programs-form">
+        <div class="form-title">SOLICITA MAS INFORMACION AQUI</div>
+        <form class="form-container">
+          <div class="form-name">
+            <p>Nombre*</p>
+            <input class="form-input" type="text" name="nombres" />
+          </div>
+          <div class="form-lastnameF">
+            <p>Apellido Paterno*</p>
+            <input class="form-input" type="text" name="apellidoPaterno" />
+          </div>
+          <div class="form-lastnameM">
+            <p>Apellido Materno*</p>
+            <input class="form-input" type="text" name="apellidoMaterno" />
+          </div>
+          <div class="form-email">
+            <p>E-mail*</p>
+            <input class="form-input" type="text" name="email" />
+          </div>
+          <div class="form-dni">
+            <p>Número de documento*</p>
+            <input class="form-input" type="text" name="documento" />
+          </div>
+          <div class="form-phone">
+            <p>Celular*</p>
+            <input class="form-input" type="text" name="celular" />
+          </div>
+          <div class="form-submit">
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+      <div class="form__programs-img">
+        <img
+          src="{{ url_for('static',filename='img/img-programs/form.jpg') }}"
+          alt=""
+        />
+      </div>
+    </div>
+  </section>
+</main>
+{% include 'CarlosCueto/jsprograms.html' %} {% include 'CarlosCueto/footer.html'
+%}

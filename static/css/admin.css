@@ -1,0 +1,25 @@
+/* Estilos para la página de administración de usuarios */
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    margin-left: 10px;
+}

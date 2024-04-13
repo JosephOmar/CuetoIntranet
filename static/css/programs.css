@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+/*****PROGRAMS*****/
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.programs{
+    margin-top: 2em;
+}
+.programs > section{
+    width: 1024px;
+    margin: auto;
+    position: relative;
+}
+.programs section:first-child{
+    width: 100vw;
+}
+/* ! COVER IMAGE PROGRAMS */
+.cover-img__programs{
+    position: relative;
+    height: 45vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 25%;
+}
+.cover-img__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1),rgba(201, 201, 201, 0.1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+}
+.cover-img__text-container{
+    position: relative;
+    width: 1024px;
+    margin: auto;
+    top: 40%;
+}
+.cover-img__title{
+    width: 15em;
+    font-size: 2.5rem;
+    color: var(--title-color);
+}
+.cover-img__subtitle{
+    padding: 1em 0;
+    width: 35em;
+    font-size: 1rem;
+    color: var(--subtitle-color);
+}
+.cover-img__button{
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    width: 12em;
+    padding: .5em 0;
+    border-radius: 2em;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+.cover-img__button:hover{
+    background-color: #fff;
+    color: var(--main-color);
+    cursor: pointer;
+}
+/* ! *****SUBMENU***** */
+.submenu__programs{
+    width: 100vw !important;
+    margin: 0 !important;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.72);
+}
+.submenu__programs-container{
+    width: 1024px;
+    margin: auto;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+.submenu__programs-container > a{
+    padding: 2.5em 0;
+    flex: 1;
+    text-align: center;
+    font-size: .8rem;
+    position: relative;
+    color: var(--main-color);
+}
+.line-programs{
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--line);
+    bottom: 0;
+    display: none;
+}
+.submenu__programs-container a:hover{
+    color: var(--line);
+    cursor: pointer;
+}
+.submenu__programs-container a:hover .line-programs{
+    display: block;
+}
+/* ! *****ABOUT PROGRAMS***** */
+.program-text{
+    font-family: 'Hind', sans-serif;
+}
+.about__what-is{
+    grid-area: what-is;
+}
+.about__slide{
+    grid-area: slide;
+}
+.about__what-does{
+    grid-area: what-does;
+}
+.about__programs{
+    padding: 2em 0;
+    display: grid;
+    grid-template: 
+    "what-is slide" auto
+    "what-is slide" auto
+    "what-is slide" auto
+    "what-does what-does" auto/ 
+    45% 55%;
+}
+.about__what-is{
+    padding: 2em;
+    display: flex;
+    gap: 2em;
+    flex-flow: column nowrap;
+}
+.about__what-is__title{
+    position: relative;
+}
+.program-underline{
+    position: absolute;
+    bottom: -.5em;
+    background-color: var(--line);
+    height: .3em;
+    width: 3em;
+}
+.about__what-is__text{
+    color: var(--text-back);
+}
+.about__slide{
+    position: relative;
+    overflow: hidden;
+    max-height: 25em;
+}
+.about__slide-img{
+    width: 80%;
+    margin-left: 20%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    position: absolute;
+}
+.about__slide-img.active{
+    opacity: 1;
+    position: relative;
+}
+.about__what-does{
+    padding: 2em;
+    display: flex;
+    gap: 2em;
+    flex-flow: column nowrap;
+}
+.about__what-does__title{
+    position: relative;
+}
+.about__what-does__text{
+    color: var(--text-back);
+}
+/* ! *****LABOR FIELD***** */
+.labor-field__programs{
+    padding: 2em;
+    display: flex;
+    gap: 2em;
+    flex-flow: column nowrap;
+}
+.labor-field__title{
+    position: relative;
+}
+.labor-field__text{
+    color: var(--text-back);
+}
+.labor-field__list{
+    display: flex;
+    gap: 1em;
+    flex-flow: column nowrap;
+}
+.labor-field__list li{
+    color: var(--text-back);
+    transition: font-size .5s linear;
+}
+.labor-field__list li:hover{
+    color: var(--line);
+    font-size: 1.2em;
+}
+.labor-field__list i{
+    padding-right: 1em;
+}
+/* ! *****SYLLABUS PROGRAMS***** */
+.syllabus__programs{
+    width: 100vw !important;
+    margin: 0 !important;
+    background-color: var(--main-color);
+    position: relative;
+}
+.syllabus__programs-container{
+    width: 1024px;
+    margin: auto;
+    padding: 2em;
+}
+.syllabus__programs-details{
+    grid-area: syllabus-details;
+}
+.syllabus__programs-img{
+    grid-area: syllabus-img;
+}
+.syllabus__programs-syllabus{
+    grid-area: syllabus-syllabus;
+    position: relative;
+}
+.syllabus__programs-download{
+    grid-area: syllabus-download;
+    height: 100px;
+}
+.syllabus__programs-container{
+    display: grid;
+    grid-template: 
+    "syllabus-details syllabus-img" auto
+    "syllabus-syllabus syllabus-syllabus" auto
+    "syllabus-download syllabus-download" auto/
+    50% 50%;
+}
+.syllabus__programs-details{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2em;
+}
+.syllabus__programs__title{
+    position: relative;
+}
+.syllabus__programs__title h3{
+    color: var(--text-color);
+}
+.syllabus__programs__text{
+    color: var(--text-color);
+}
+.syllabus__programs-img{
+    position: relative;
+}
+.syllabus__programs-imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 1em;
+}
+.syllabus__programs-syllabus-container{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2em;
+}
+.syllabus-container{
+    position: relative;
+    width: 200%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.syllabus-item{
+    flex: 1;
+}
+.syllabus-line-complete{
+    width: 100%;
+    margin-bottom: 1em;
+    height: .6em;
+    background-color: rgba(255, 255, 255, .5);
+}
+.syllabus-item-text-cycle{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-family: 'Lalezar', cursive;
+    color:  var(--text-color);
+}
+.syllabus-item.active .syllabus-item-text-cycle{
+    color: var(--line);
+}
+.syllabus-item-text-number{
+    font-family: 'Lalezar', cursive;
+    font-size: 4rem;
+    line-height: 4rem;
+    color: var(--text-color);
+}
+.syllabus-item.active .syllabus-item-text-number{
+    color: var(--line);
+}
+.syllabus-item.active .syllabus-line-part{
+    width: 30%;
+    height: .6em;
+    background-color: var(--line);
+}
+.syllabus-curses{
+    color: var(--text-color);
+    padding: 0 .5em;
+    font-size: 1.2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .5em;
+}
+.syllabus-curses li i{
+    padding-right: .3em;
+    font-size: 1rem;
+}
+.button1{
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: -1.5em;
+    transform: translateY(-50%);
+    color: var(--text-color);
+}
+.button2{
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    right: -1.5em;
+    transform: translateY(-50%);
+    color: var(--text-color);
+}
+.syllabus__programs-download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.syllabus__programs-download a{
+    padding: 0.5em 3em;
+    background-color: var(--bg-primary);
+    border-radius: 1em;
+}
+.syllabus__programs-download a:hover{
+    color: #fff;
+    background-color: var(--text-back);
+}
+.syllabus__programs-download a i{
+    padding-right: 1em;
+}
+/* ! *****FORM***** */
+.form__programs{
+    width: 100vw !important;
+    margin: 0 !important;
+}
+.form__programs-container{
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.form__programs-container > div{
+    flex: 1;
+}
+.form__programs-form{
+    padding: 5em 2em 2em 2em;
+}
+.form-title{
+    margin-bottom: 1em;
+}
+.form-name{
+    grid-area: name;
+}
+.form-lastnameF{
+    grid-area: lastnameF;
+}
+.form-lastnameM{
+    grid-area: lastnameM;
+}
+.form-email{
+    grid-area: email;
+}
+.form-dni{
+    grid-area: dni;
+}
+.form-phone{
+    grid-area: phone;
+}
+.form-submit{
+    grid-area: submit;
+}
+.form-container{
+    padding-right: 20%;
+    display: grid;
+    grid-template: 
+    "name name name"
+    "lastnameF . lastnameM"
+    "email email email"
+    "dni . phone"
+    "submit . ."/
+    47% 6% 47%;
+}
+.form-container > div{
+    position: relative;
+}
+.form-container > div p{
+    position: absolute;
+    top: 50%;
+    left: .7em;
+    transform: translateY(-50%);
+    color: rgba(0,55,133,.5);
+    user-select: none;
+    transition: all .1s linear;
+    z-index: -100;
+}
+.form-container > div.focus p{
+    top: 1em;
+    font-size: .7rem;
+}
+.form-container input{
+    width: 100%;
+    height: 3em;
+    padding: 1em 0 0 1em;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: .1em solid var(--text-back);
+    border-radius: .5em;
+}
+.form-name,.form-email{
+    margin: 2em 0;
+}
+.form-submit{
+    margin: 3em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-submit input{
+    padding: 0;
+    border-radius: 1.5em;
+    color: var(--text-back);
+}
+.form-submit input:hover{
+    color: var(--text-color);
+    background-color: var(--text-back);
+}
+.form__programs-img img{
+    position: absolute;
+    height: 70%;
+    top: 5%;
+    right: 0;
+    border-radius: 10em 0 0 10em;
+}

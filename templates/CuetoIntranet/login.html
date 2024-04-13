@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/login.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <div class="login">
+        <div class="login-logo">
+          <img
+            src="{{ url_for('static',filename='img/svg/logo.svg') }}"
+            alt=""
+          />
+        </div>
+        <div class="login-form">
+          <form action="{{ url_for('login_page') }}" method="post">
+            {{ form.hidden_tag() }}
+            <div class="input-username">
+              <div class="input-icon"><i class="fa-solid fa-user"></i></div>
+              <input
+                type="text"
+                name="username"
+                placeholder="Usuario"
+                required
+              />
+              <div class="input-mail">@carloscueto.edu.pe</div>
+            </div>
+            <div class="input-password">
+              <div class="input-icon"><i class="fa-solid fa-key"></i></div>
+              <input
+                type="password"
+                name="password"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+            <button type="submit">Ingresar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- <form action="{{ url_for('login_page') }}" method="post">
+          {{ form.hidden_tag() }}
+Agrega el campo CSRF aquí 
+          <input
+            type="text"
+            name="username"
+            placeholder="Correo Institucional"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+            required
+          />
+          <button type="submit">Ingresar</button>
+        </form> -->
